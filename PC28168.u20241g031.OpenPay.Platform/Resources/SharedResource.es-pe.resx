@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="InvalidModelStateTitle" xml:space="preserve">
+    <value>Ocurrieron uno o más errores de validación.</value>
+  </data>
+    <data name="UnexpectedServerError" xml:space="preserve">
+    <value>Ocurrió un error inesperado en el servidor.</value>
+  </data>
+    <data name="UnexpectedErrorProcessingRequest" xml:space="preserve">
+    <value>Ocurrió un error inesperado al procesar la solicitud.</value>
+  </data>
+    <data name="InvalidDisbursementOrderRequest" xml:space="preserve">
+    <value>La solicitud de la orden de desembolso contiene parámetros inválidos: {0}</value>
+  </data>
+    <data name="SettlementsDisbursementOrderDuplicated" xml:space="preserve">
+    <value>Ya existe una orden de desembolso con el mismo código de seguimiento.</value>
+  </data>
+    <data name="UnexpectedErrorCreatingDisbursementOrder" xml:space="preserve">
+    <value>Ocurrió un error inesperado al crear la orden de desembolso.</value>
+  </data>
+    <data name="CreateDisbursementOrderSummary" xml:space="preserve">
+    <value>Crea una nueva orden de desembolso.</value>
+  </data>
+    <data name="CreateDisbursementOrderDescription" xml:space="preserve">
+    <value>Registra una nueva orden de desembolso en el bounded context Settlements y retorna el recurso creado.</value>
+  </data>
+    <data name="CreateDisbursementOrderCreated" xml:space="preserve">
+    <value>La orden de desembolso fue creada exitosamente.</value>
+  </data>
+    <data name="CreateDisbursementOrderBadRequest" xml:space="preserve">
+    <value>Los datos de la solicitud son inválidos o incumplen las reglas de negocio.</value>
+  </data>
+    <data name="CreateDisbursementOrderConflict" xml:space="preserve">
+    <value>Ya existe una orden de desembolso con el mismo código de seguimiento.</value>
+  </data>
+    <data name="CreateDisbursementOrderServerError" xml:space="preserve">
+    <value>Ocurrió un error interno del servidor al crear la orden de desembolso.</value>
+  </data>
+    <data name="CreateDisbursementOrderSchema" xml:space="preserve">
+    <value>Datos de entrada para crear una nueva orden de desembolso.</value>
+  </data>
+    <data name="DisbursementOrderSchema" xml:space="preserve">
+    <value>Datos de respuesta que representan una orden de desembolso registrada.</value>
+  </data>
+</root>

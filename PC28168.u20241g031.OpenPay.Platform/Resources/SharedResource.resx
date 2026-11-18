@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>2.0</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="InvalidModelStateTitle" xml:space="preserve">
+    <value>One or more validation errors occurred.</value>
+  </data>
+    <data name="UnexpectedServerError" xml:space="preserve">
+    <value>An unexpected server error occurred.</value>
+  </data>
+    <data name="UnexpectedErrorProcessingRequest" xml:space="preserve">
+    <value>An unexpected error occurred while processing the request.</value>
+  </data>
+    <data name="InvalidDisbursementOrderRequest" xml:space="preserve">
+    <value>The disbursement order request contains invalid parameters: {0}</value>
+  </data>
+    <data name="SettlementsDisbursementOrderDuplicated" xml:space="preserve">
+    <value>A disbursement order with the same order tracking code already exists.</value>
+  </data>
+    <data name="UnexpectedErrorCreatingDisbursementOrder" xml:space="preserve">
+    <value>An unexpected error occurred while creating the disbursement order.</value>
+  </data>
+    <data name="CreateDisbursementOrderSummary" xml:space="preserve">
+    <value>Creates a new disbursement order.</value>
+  </data>
+    <data name="CreateDisbursementOrderDescription" xml:space="preserve">
+    <value>Registers a new disbursement order in the Settlements bounded context and returns the created resource.</value>
+  </data>
+    <data name="CreateDisbursementOrderCreated" xml:space="preserve">
+    <value>The disbursement order was successfully created.</value>
+  </data>
+    <data name="CreateDisbursementOrderBadRequest" xml:space="preserve">
+    <value>The disbursement order request data is invalid or violates business rules.</value>
+  </data>
+    <data name="CreateDisbursementOrderConflict" xml:space="preserve">
+    <value>A disbursement order with the same order tracking code already exists.</value>
+  </data>
+    <data name="CreateDisbursementOrderServerError" xml:space="preserve">
+    <value>An internal server error occurred while creating the disbursement order.</value>
+  </data>
+    <data name="CreateDisbursementOrderSchema" xml:space="preserve">
+    <value>Request payload for creating a new disbursement order.</value>
+  </data>
+    <data name="DisbursementOrderSchema" xml:space="preserve">
+    <value>Response payload representing a registered disbursement order.</value>
+  </data>
+</root>
