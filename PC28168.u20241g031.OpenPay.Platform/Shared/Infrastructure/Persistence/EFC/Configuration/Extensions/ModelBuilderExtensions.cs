@@ -30,6 +30,8 @@ public static class ModelBuilderExtensions
                 }
             }
 
+            if (entity.IsOwned()) continue;
+
             foreach (var key in entity.GetKeys())
             {
                 var keyName = key.GetName();

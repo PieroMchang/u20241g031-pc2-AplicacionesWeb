@@ -1,6 +1,48 @@
-@PC28168.u20241g031.OpenPay.Platform_HostAddress = http://localhost:5008
+@HostAddress = http://127.0.0.1:5000
 
-GET {{PC28168.u20241g031.OpenPay.Platform_HostAddress}}/weatherforecast/
-Accept: application/json
 
-###
+### 1. Crear DisbursementOrder exitoso (201 Created)
+POST {{HostAddress}}/api/v1/disbursement-orders
+Content-Type: application/json
+Accept-Language: en-US
+
+{
+  "orderTrackingCode": "11111111-2222-3333-4444-555555555555",
+  "affiliateStoreId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "scheduledFrom": "2026-11-20",
+  "scheduledTo": "2026-11-25",
+  "transferCapAmount": 1500.50,
+  "transferCapCurrencyCode": "PEN",
+  "user": "operador_openpay01",
+  "remarks": "Liquidacion semanal comercio afiliado Lima"
+}
+
+### 2. Probar duplicado de OrderTrackingCode en Español (409 Conflict)
+POST {{HostAddress}}/api/v1/disbursement-orders
+Content-Type: application/json
+Accept-Language: es-PE
+
+{
+  "orderTrackingCode": "11111111-2222-3333-4444-555555555555",
+  "affiliateStoreId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "scheduledFrom": "2026-11-20",
+  "scheduledTo": "2026-11-25",
+  "transferCapAmount": 1500.50,
+  "transferCapCurrencyCode": "PEN",
+  "user": "operador_openpay01"
+}
+
+### 3. Probar error de regla de negocio ScheduledTo <= ScheduledFrom (400 Bad Request)
+POST {{HostAddress}}/api/v1/disbursement-orders
+Content-Type: application/json
+Accept-Language: es-PE
+
+{
+  "orderTrackingCode": "99999999-2222-3333-4444-555555555555",
+  "affiliateStoreId": "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee",
+  "scheduledFrom": "2026-11-25",
+  "scheduledTo": "2026-11-20",
+  "transferCapAmount": 1500.50,
+  "transferCapCurrencyCode": "PEN",
+  "user": "operador_openpay01"
+}
