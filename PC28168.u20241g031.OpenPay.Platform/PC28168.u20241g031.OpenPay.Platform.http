@@ -1,0 +1,6 @@
+@PC28168.u20241g031.OpenPay.Platform_HostAddress = http://localhost:5008
+
+GET {{PC28168.u20241g031.OpenPay.Platform_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
